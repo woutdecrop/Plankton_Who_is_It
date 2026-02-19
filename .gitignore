@@ -1,0 +1,10 @@
+# RStudio project files to ignore
+.Rproj.user
+
+# Ignore local R history and data
+.Rhistory
+.RData
+
+# Ignore images (they are large and local only)
+Images/
+www/
