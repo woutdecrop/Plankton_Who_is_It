@@ -22,6 +22,18 @@ Multiplayer:
 - Avatar & Theme Customization: Choose your station color and emoji.
 - Reactive Filtering and Zoom: Same as singleplayer, applied to shared pool.
 
+Offline Multiplayer (against AI):
+- The same look-and-feel as online multiplayer, but your opponent is the built‑in Station AI.
+- AI automatically selects a secret card and answers your questions with logic based on its target.
+- You can also watch the AI eliminate suspects and occasionally ask you questions about your own card.
+- Scoreboard keeps track of human vs. AI wins and the top scientist banner will include the AI if it leads.
+
+Singleplayer (AI‑only):
+- Classic mission mode where you never choose a secret – the AI encrypts one for you.
+- Ask trait questions through chat or quick buttons and eliminate suspects manually.
+- Guess mode awards streak points and you can request hints that sacrifice streaks.
+- This version uses the enhanced layout and features from the multiplayer script.
+
 Installation
 
 1. Clone the repository:
@@ -43,10 +55,19 @@ Run the game in R:
     runApp("singleplayer.R")
 
 - Enter your scientist ID and select a theme color.
-- Analyze the target using chat and trait buttons.
-- Activate Guess Mode to select the correct specimen.
+- Analyze the AI's encrypted target using chat and trait buttons.
+- Activate Guess Mode to identify the specimen and build a streak.
 
-Multiplayer:
+Offline Multiplayer (against AI):
+Run the game in R:
+    library(shiny)
+    runApp("multiplayer_offline.R")
+
+- Play a head‑to‑head match with the Station AI (no network required).
+- Both you and the AI pick secret cards and take turns eliminating suspects.
+- The AI will automatically ask questions, eliminate cards, and try to guess your target.
+
+Multiplayer (online):
 Run the game in R:
     library(shiny)
     runApp("multiplayer_preloaded.R")
