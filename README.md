@@ -4,6 +4,7 @@ An interactive Shiny-based game to identify plankton species from images. Design
 
 Features
 
+
 Singleplayer:
 - Mission Mode: Analyze a hidden plankton target chosen from the image library.
 - Trait Analysis: Ask questions about species traits, device type, or location.
